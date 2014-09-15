@@ -18,6 +18,9 @@ endef
 
 define EMCE_INSTALL_TARGET_CMDS
 	$(MAKE) -C $(@D)/linux $(LINUX_MAKE_FLAGS) KERNEL_SRC=$(LINUX_DIR) KVERSION=$(LINUX_VERSION_PROBED) modules_install
+	$(INSTALL) -d $(TARGET_DIR)/opt
+	cp -r $(@D)/ui $(TARGET_DIR)/opt/emce
+	$(INSTALL) -D -m 755 $(BR2_EXTERNAL)/package/emce/S99ui $(TARGET_DIR)/etc/init.d/S99ui
 endef
 
 $(eval $(generic-package))
