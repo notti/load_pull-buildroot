@@ -1,0 +1,5 @@
+#!/bin/sh
+
+test "x`cat /sys/kernel/kexec_loaded`y" = "x1y" || exit 0
+echo "Will now restart with kexec"
+kexec -e

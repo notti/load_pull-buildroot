@@ -1,0 +1,8 @@
+config BR2_PACKAGE_EMCE
+	bool "emce"
+	depends on BR2_LINUX_KERNEL
+	help
+            Emce module to access the fpga
+
+comment "emce needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL

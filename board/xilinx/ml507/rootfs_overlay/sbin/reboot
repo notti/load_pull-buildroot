@@ -1,0 +1,7 @@
+#!/bin/sh
+
+KERNEL=$1
+[ "x$KERNEL" = "x" ] && KERNEL=/boot/vmlinux
+
+/usr/sbin/kexec -l $KERNEL
+/sbin/halt
