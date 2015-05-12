@@ -1,5 +1,3 @@
-source "$BR2_EXTERNAL/package/python-zope-interface/Config.in"
-source "$BR2_EXTERNAL/package/python-twisted/Config.in"
 source "$BR2_EXTERNAL/package/python-smmap/Config.in"
 source "$BR2_EXTERNAL/package/emce/Config.in"
 

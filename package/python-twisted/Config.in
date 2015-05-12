@@ -1,5 +1,0 @@
-config BR2_PACKAGE_PYTHON_TWISTED
-	bool "python-twisted"
-	depends on BR2_PACKAGE_PYTHON && BR2_PACKAGE_PYTHON_ZOPE_INTERFACE
-	help
-          python - twisted

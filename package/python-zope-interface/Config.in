@@ -1,6 +1,0 @@
-config BR2_PACKAGE_PYTHON_ZOPE_INTERFACE
-	bool "python-zope-interface"
-	depends on BR2_PACKAGE_PYTHON
-	help
-          zope.interface
-
