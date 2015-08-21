@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-EMCE_VERSION = v0.3a
+EMCE_VERSION = v1.0
 EMCE_SITE = $(call github,notti,bak-software,$(EMCE_VERSION))
 EMCE_SOURCE = $(EMCE_VERSION).tar.gz
 EMCE_LICENSE = GPLv2
